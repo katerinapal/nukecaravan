@@ -1,3 +1,11 @@
+import { DialogWindow } from "..\\DialogWindow.js";
+import { Game } from "..\\Game.js";
+import { BanditDialogs } from "..\\data\\BanditDialogs.js";
+import { BanditEvents } from "..\\data\\BanditEvents.js";
+import { BanditConstants } from "..\\data\\BanditEvents.js";
+import { checkEventForStep } from "..\\Utils.js";
+import { getDistance } from "..\\world\\WorldUtils.js";
+var BanditPlugin;
 /**
  *  Столкновения с бандитами
  *
@@ -115,3 +123,4 @@ BanditPlugin.getMaxHire = function (world, bandits) {
 };
 
 Game.addPlugin(BanditPlugin);
+export { BanditPlugin };

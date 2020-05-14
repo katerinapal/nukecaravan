@@ -1,4 +1,8 @@
-var Game = {
+import { GameConstants } from ".\\data\\GameConstants.js";
+import { StartWorldState } from ".\\data\\StartWorldState.js";
+import { WorldState } from ".\\world\\WorldState.js";
+
+export var Game = {
     plugins: [],  // генераторы событий
 };
 

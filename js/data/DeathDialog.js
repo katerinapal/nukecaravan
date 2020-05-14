@@ -1,7 +1,7 @@
 /**
  *  Диалоги для смерти и рестарта.
  */
-var DeathDialogs = {
+export var DeathDialogs = {
     "start": {
         icon: "images/pic_death.jpg",
         title: "Погибший в пустоши",

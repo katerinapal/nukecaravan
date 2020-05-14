@@ -1,10 +1,22 @@
+import { BanditDeathHungerMessages } from ".\\BanditEvents.js";
+import { BanditWinMessages } from ".\\BanditEvents.js";
+import { BanditLostMessages } from ".\\BanditEvents.js";
+import { BanditAtmospheric } from ".\\BanditEvents.js";
+import { BanditNumbers } from ".\\BanditEvents.js";
+import { BanditFirepowers } from ".\\BanditEvents.js";
+import { BanditConstants } from ".\\BanditEvents.js";
+import { Goodness } from "..\\world\\WorldUtils.js";
+import { checkProbability } from "..\\Utils.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+import { BanditPlugin } from "..\\plugins\\BanditPlugin.js";
+
 /**
  *  Описания диалогов с бандитами
  *  вся структура и логика переходов - здесь
  *  Это объект, используемый как ассоциативный массив
  *  названия полей служат для идентификации диалогов
  */
-var BanditDialogs = {
+export var BanditDialogs = {
     /*
      *   Заготовка для диалога, копируйте и используйте для новых вариантов
      * */

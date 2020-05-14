@@ -1,8 +1,12 @@
+import { Goodness } from "..\\world\\WorldUtils.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+import { hasCaravanOverweight } from "..\\world\\WorldUtils.js";
+
 /**
  * Константы для плагина сброса лишнего груза
  */
 
-var DropDialogs = {
+export var DropDialogs = {
     "start": {
         icon: "images/pic_overweight.jpg",
         exit: false,

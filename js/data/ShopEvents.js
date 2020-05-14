@@ -1,7 +1,7 @@
 /**
  *  Константы для настройки магазинов
  */
-var ShopEventConstants = {
+export var ShopEventConstants = {
     SHOP_DISTANCE_MIN: 100,   // минимальное расстояние между магазинами
     SHOP_PROBABILITY: 0.5,   // шанс встретить магазин или караван в день
     SHOP_NO_MONEY_MESSAGE: 'Кончились деньги и вы пошли дальше...',   // сообщение о нехватке денег
@@ -12,7 +12,7 @@ var ShopEventConstants = {
 };
 
 //  описания возможных магазинов
-var Shops = [{
+export var Shops = [{
     text: 'Вы нашли магазин в этой жуткой пустоши',
     products: [
         {item: 'food', text: 'Еда', qty: 20, price: 50},

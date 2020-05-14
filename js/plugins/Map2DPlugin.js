@@ -1,3 +1,11 @@
+import { DialogWindow } from "..\\DialogWindow.js";
+import { Game } from "..\\Game.js";
+import { Goodness } from "..\\world\\WorldUtils.js";
+import { TownDialogs } from "..\\data\\TownDialog.js";
+import { Caravan } from "..\\data\\CaravanConstants.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+import { areNearPoints } from "..\\world\\WorldUtils.js";
+var Map2DPlugin;
 /**
  * Map2D Plugin *
  *  - при клике на городе на карте - отправляет караван туда

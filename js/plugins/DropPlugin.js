@@ -1,3 +1,7 @@
+import { DialogWindow } from "..\\DialogWindow.js";
+import { Game } from "..\\Game.js";
+import { DropDialogs } from "..\\data\\DropDialogs.js";
+import { hasCaravanOverweight } from "..\\world\\WorldUtils.js";
 /**
  *  Модуль интерфейса для дропа, если есть перевес
  *

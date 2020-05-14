@@ -1,3 +1,12 @@
+import { Game } from "..\\Game.js";
+import { GameConstants } from "..\\data\\GameConstants.js";
+import { Goodness } from "..\\world\\WorldUtils.js";
+import { Caravan } from "..\\data\\CaravanConstants.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+import { getCaravanWeight } from "..\\world\\WorldUtils.js";
+import { getCaravanMaxWeight } from "..\\world\\WorldUtils.js";
+import { areNearPoints } from "..\\world\\WorldUtils.js";
+var CorePlugin;
 /**
  *  Core Plugin - базовые события
  *  - изменение дня

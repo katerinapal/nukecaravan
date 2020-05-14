@@ -1,7 +1,7 @@
 /*
  *   Дата класс для хранения состояния мира игры
  * */
-function WorldState(stats) {
+export function WorldState(stats) {
     this.day = 0;           // текущий день, с десятичными долям
     this.crew = stats.crew; // количество людей
     this.oxen = stats.oxen; // количество быков

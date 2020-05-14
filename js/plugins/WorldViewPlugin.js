@@ -1,3 +1,6 @@
+import { Game } from "..\\Game.js";
+import { getCaravanWeight } from "..\\world\\WorldUtils.js";
+import { getCaravanMaxWeight } from "..\\world\\WorldUtils.js";
 /*
  *      Функция для отображения текущего состояния мира
  *       и лога событий

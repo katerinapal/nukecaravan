@@ -1,3 +1,11 @@
+import { DialogWindow } from "..\\DialogWindow.js";
+import { Game } from "..\\Game.js";
+import { Goodness } from "..\\world\\WorldUtils.js";
+import { Shops } from "..\\data\\ShopEvents.js";
+import { ShopEventConstants } from "..\\data\\ShopEvents.js";
+import { checkEventForStep } from "..\\Utils.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+import { getDistance } from "..\\world\\WorldUtils.js";
 /**
  *  Плагин магазина
  *  основная концепция - минимальная связь с другими классами

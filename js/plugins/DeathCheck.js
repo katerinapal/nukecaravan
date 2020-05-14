@@ -1,3 +1,10 @@
+import { DialogWindow } from "..\\DialogWindow.js";
+import { Game } from "..\\Game.js";
+import { Goodness } from "..\\world\\WorldUtils.js";
+import { DeathDialogs } from "..\\data\\DeathDialog.js";
+import { DeathRules } from "..\\data\\DeathRules.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+var DeathCheck;
 /**
  *   Проверяет условия смерти
  *   по DeathRules

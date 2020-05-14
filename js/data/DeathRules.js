@@ -9,7 +9,7 @@
  *      text - сообщение для лога
  */
 
-var DeathRules = [
+export var DeathRules = [
     {
         param: 'food',
         death: 0,

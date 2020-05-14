@@ -1,4 +1,6 @@
-var RandomEventConstants = {
+import { Goodness } from "..\\world\\WorldUtils.js";
+
+export var RandomEventConstants = {
     EVENT_PROBABILITY: 1, // 3 // примерное число событий в день, реально будет колебаться около этого значения
 };
 
@@ -9,7 +11,7 @@ var RandomEventConstants = {
  *
  *   $1  - используется для указание реального значения параметра
  * */
-var RandomEvents = [
+export var RandomEvents = [
     {
         goodness: Goodness.negative,
         stat: 'crew',

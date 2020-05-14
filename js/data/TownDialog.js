@@ -1,7 +1,12 @@
+import { Goodness } from "..\\world\\WorldUtils.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+import { buyCargo } from "..\\world\\WorldUtils.js";
+import { sellCargo } from "..\\world\\WorldUtils.js";
+
 /**
  *  Диалоги для городов
  */
-var TownDialogs = {
+export var TownDialogs = {
     "start": {
         icon: "images/pic_wagons.jpg",
         title: "Вы прибыли в город",

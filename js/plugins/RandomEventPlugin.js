@@ -1,3 +1,9 @@
+import { Game } from "..\\Game.js";
+import { RandomEvents } from "..\\data\\RandomEvents.js";
+import { RandomEventConstants } from "..\\data\\RandomEvents.js";
+import { checkEventForStep } from "..\\Utils.js";
+import { addLogMessage } from "..\\world\\WorldUtils.js";
+var RandomEventPlugin;
 /**
  * Плагин рандомных событий
  * - основного геймплея в оригинале игры с караваном

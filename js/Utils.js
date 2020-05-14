@@ -1,3 +1,4 @@
+import { GameConstants } from ".\\data\\GameConstants.js";
 String.prototype.withArg = function (arg1, arg2) {
     var str = this.replace("$1", arg1);
     if (arg2) {
@@ -20,12 +21,12 @@ Array.prototype.getByDegree = function (number) {
 };
 
 // функция проверки для выпадения случаного события с вероятностью от 0 до 1
-function checkProbability(probability) {
+export function checkProbability(probability) {
     return Math.random() <= probability;
 }
 
 // функция для проверки выпадения случайного события на текущем шаге игры
-function checkEventForStep(dayProbability) {
+export function checkEventForStep(dayProbability) {
     var probability = dayProbability * GameConstants.STEP_IN_MS / GameConstants.DAY_IN_MS;
     return checkProbability(probability);
 }
